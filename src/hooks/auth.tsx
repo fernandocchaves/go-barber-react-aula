@@ -82,11 +82,6 @@ const AuthProvider: React.FC = ({ children }) => {
 
 const useAuth = (): AuthContextData => {
   const context = useContext(AuthContext);
-
-  if (!context) {
-    throw new Error('useAuth precisar ser usado com um AuthProvider');
-  }
-
   return context;
 };
 
